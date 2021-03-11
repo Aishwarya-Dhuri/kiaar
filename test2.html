@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Kiaar | General Body Local</title>
+    <link href="/assets/kiaar-web/css/bootstrap4.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="/assets/kiaar-web/js/jquery-3.4.1.min.js"></script>
+
+
+    <script src="/assets/kiaar-web/js/bootstrap4.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        a:hover,
+        a:focus {
+            text-decoration: none;
+            outline: none;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+      
+        .navbar-nav>li>a {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .mainmenu {
+            background-color: transparent;
+            border-color: transparent;
+            margin-bottom: 0;
+            border: 0px !important;
+        }
+
+        .navbar-nav>li:last-child>a {
+            padding-right: 0px;
+            margin-right: 0px;
+        }
+
+        .dropdown-menu {
+            padding: 0px 0;
+            margin: 0 0 0;
+            border: 0px solid transition !important;
+            border: 0px solid rgba(0, 0, 0, .15);
+            border-radius: 0px;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+
+        }
+
+        /*=-====Main Menu=====*/
+        .navbar-nav .open .dropdown-menu>li>a {
+            padding: 16px 15px 16px 25px;
+        }
+
+        .header_bottom {
+            background: #0071ba
+        }
+
+        .header_area .header_bottom .mainmenu a,
+        .navbar-default .navbar-nav>li>a {
+            color: #fff;
+            font-size: 16px;
+            text-transform: capitalize;
+            padding: 16px 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header_area .mainmenu .active a,
+        .header_area .mainmenu .active a:focus,
+        .header_area .mainmenu .active a:hover,
+        .header_area .mainmenu li a:hover,
+        .header_area .mainmenu li a:focus,
+        .navbar-default .navbar-nav>.open>a,
+        .navbar-default .navbar-nav>.open>a:focus,
+        .navbar-default .navbar-nav>.open>a:hover {
+            color: #0071ba;
+            background: #54c6d4;
+            outline: 0;
+        }
+
+        /*-----./ Main Menu-----*/
+
+        .navbar-default .navbar-toggle {
+            border-color: #fff
+        }
+
+        /*Toggle Button*/
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fff
+        }
+
+        /*Toggle Button*/
+
+        /*==========Sub Menu=v==========*/
+        .mainmenu .collapse ul>li:hover>a {
+            background: #54c6d4;
+        }
+
+        .mainmenu .collapse ul ul>li:hover>a,
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+            background: #CBEAF0;
+        }
+
+        .mainmenu .collapse ul ul ul>li:hover>a {
+            background: #CBEAF0;
+        }
+
+        .mainmenu .collapse ul ul,
+        .mainmenu .collapse ul ul.dropdown-menu {
+            background: #98D7E1;
+        }
+
+        .mainmenu .collapse ul ul ul,
+        .mainmenu .collapse ul ul ul.dropdown-menu {
+            background: #0a1464
+        }
+
+        .mainmenu .collapse ul ul ul ul,
+        .mainmenu .collapse ul ul ul ul.dropdown-menu {
+            background: #e4eeb8
+        }
+
+        /******************************Drop-down menu work on hover**********************************/
+        .mainmenu {
+            background: none;
+            border: 0 solid;
+            margin: 0;
+            padding: 0;
+            min-height: 20px
+        }
+
+        @media only screen and (min-width: 767px) {
+            .mainmenu .collapse ul li {
+                position: relative;
+            }
+
+            .mainmenu .collapse ul li:hover>ul {
+                display: block
+            }
+
+            .mainmenu .collapse ul ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                min-width: 250px;
+                display: none
+            }
+
+            /*******/
+            .mainmenu .collapse ul ul li {
+                position: relative
+            }
+
+            .mainmenu .collapse ul ul li:hover>ul {
+                display: block
+            }
+
+            .mainmenu .collapse ul ul ul {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                min-width: 250px;
+                display: none
+            }
+
+            /*******/
+            .mainmenu .collapse ul ul ul li {
+                position: relative
+            }
+
+            .mainmenu .collapse ul ul ul li:hover ul {
+                display: block
+            }
+
+            .mainmenu .collapse ul ul ul ul {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                min-width: 250px;
+                display: none;
+                z-index: 1
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-area" class="header_area">
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row">
+                    <nav role="navigation" class="navbar navbar-default mainmenu">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse"
+                                class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collection of nav links and other content for toggling -->
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul id="fresponsive" class="nav navbar-nav dropdown">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">service</a></li>
+                                <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Submenu 1<span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Lorem ipsum</a></li>
+                                        <li>
+                                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu 2<span
+                                                    class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Lorem ipsum</a></li>
+                                                <li><a href="#">Lorem ipsum</a></li>
+                                                <li>
+                                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Submenu
+                                                        3<span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Lorem ipsum</a></li>
+                                                        <li><a href="#">Lorem ipsum</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#Download">lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div><!-- /.header_bottom -->
+
+    </div>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
