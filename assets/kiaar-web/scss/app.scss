@@ -254,6 +254,14 @@
     margin-left: 20px;
   }
 }
+.externalink {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: inherit;
+  }
+}
 /******ABout page ,General body page , Governing Council page, Staff page ,About Chairman Page*******/
 .about-main {
   width: 100%;
