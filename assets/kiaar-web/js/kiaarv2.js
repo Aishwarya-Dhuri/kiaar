@@ -1,13 +1,13 @@
 $(document).ready(function() {
+
     $('#page').fadeIn(2000);
     $('.carousel').carousel({
        //interval:false
    }); 
  
    new WOW().init();
-   
-   
- 
+
+
    $('#toggleMenu').on('click', function () {
     $("#cu-overlay").toggleClass("overlay-visible");
 
@@ -108,7 +108,7 @@ $(document).ready(function() {
      
    }
  
- 
+
  
    // $('li > ul > li:last-child > a').on('keydown', function (e) {
    //     if ((e.keyCode == 9) && $(this).parent('li').children('ul').length == 0) {

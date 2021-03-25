@@ -95,6 +95,27 @@
         }
       }
     }
+
+    .researcharea {
+      background-color: $brown;
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      left: auto;
+      transform: translateX(-42%);
+      border-radius: 50%;
+      padding: 150px 40px 0 70px;
+      top: auto;
+      right: 265px;
+      z-index: 0;
+      bottom: 85px;
+
+      .impact-list {
+        li {
+          width: 100%;
+        }
+      }
+    }
     .impactareas,
     .servicesarea,
     .technologyarea,
@@ -110,16 +131,24 @@
     }
     .assistance-sec {
       background-color: transparent;
-      width: 400px;
+      width: 350px;
       height: auto;
       position: absolute;
 
       left: auto;
-      transform: translateX(-50%);
+      transform: translateX(30%);
       border-radius: 50%;
       z-index: 1;
       right: 150px;
-      top: 75%;
+      top: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      .imgarea {
+        float: none;
+        margin: 0 auto 20px auto;
+      }
     }
     .impact-list {
       li {
@@ -1002,6 +1031,10 @@
 @media only screen and (max-width: 1280px) {
   .home-main {
     .hm-bannersec {
+      .researcharea {
+        bottom: 70px;
+        transform: translateX(-25%);
+      }
       .technologyarea {
         top: 37%;
         right: 160px;
@@ -1018,6 +1051,13 @@
     top: 47%;
     left: 18%;
   }
+  .home-main .hm-bannersec {
+    margin-bottom: 50px;
+  }
+  .home-main .hm-bannersec .researcharea {
+    bottom: 80px;
+    transform: translateX(-32%);
+  }
   .about-main .abtinstimg {
     margin-left: -35%;
   }
@@ -1026,6 +1066,8 @@
 @media only screen and (max-width: 1100px) {
   .home-main {
     .hm-bannersec {
+      margin-bottom: 100px;
+
       .technologyarea {
         top: 39%;
         right: 90px;
@@ -1037,6 +1079,10 @@
       .assistance-sec {
         right: 50px;
         top: 78%;
+      }
+      .researcharea {
+        bottom: 0;
+        transform: translateX(-20%);
       }
     }
   }
@@ -1117,6 +1163,9 @@
         height: 370px;
         padding: 53px 50px 0 160px;
       }
+      .researcharea {
+        transform: translateX(0%);
+      }
       .servicesarea {
         top: 48%;
         width: 480px;
@@ -1124,7 +1173,8 @@
         padding: 60px 100px 0 110px;
       }
       .assistance-sec {
-        right: 0;
+        right: 45px;
+        width: 285px;
       }
     }
   }
@@ -1208,9 +1258,11 @@
         transform: translateX(0%);
         right: 0;
         top: auto;
-        bottom: auto;
+        bottom: -275px;
         top: auto;
-        width: 340px;
+        position: relative;
+
+        width: 100%;
       }
       .technologyarea {
         right: -20%;
@@ -1226,6 +1278,12 @@
           background-size: 100%;
           background-repeat: no-repeat;
         }
+      }
+      .researcharea {
+        transform: translateX(63%);
+        bottom: -160px;
+        right: 270px;
+        padding: 160px 40px 0 100px;
       }
     }
   }
@@ -1302,6 +1360,8 @@
   .home-main {
     .hm-bannersec {
       max-height: max-content;
+      margin-bottom: 20px;
+
       .mobhmbanner {
         display: block;
       }
@@ -1318,7 +1378,8 @@
       .impactareas,
       .servicesarea,
       .technologyarea,
-      .assistance-sec {
+      .assistance-sec,
+      .researcharea {
         top: auto;
         left: 0;
         position: relative;
@@ -1337,6 +1398,26 @@
       }
       .assistance-sec {
         padding: 30px;
+        bottom: 0;
+        display: block;
+        text-align: left;
+        padding: 30px 50px;
+        .imgarea {
+          float: left;
+          margin: 0;
+        }
+        .contentarea {
+          br {
+            display: none;
+          }
+        }
+      }
+      .researcharea {
+        bottom: 0;
+        right: 0;
+        .impact-list li {
+          width: 50%;
+        }
       }
 
       .technologyarea .impact-list li {
@@ -1512,6 +1593,8 @@
       line-height: 22px;
     }
     .hm-bannersec {
+      margin-bottom: 30px;
+
       .imgarea {
         width: 50px;
         img {
@@ -1552,6 +1635,9 @@
         margin-top: -60px;
         padding: 70px 30px 40px 30px;
       }
+      .researcharea {
+        padding: 30px;
+      }
       .assistance-sec {
         .contentarea {
           width: 100%;
@@ -1574,7 +1660,7 @@
 
 @media only screen and (max-width: 320px) {
   .home-main .hm-bannersec .impact-list li {
-    width: 100%;
+    width: 100% !important;
     br {
       display: none;
     }
